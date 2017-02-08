@@ -27,7 +27,7 @@ RSpec.describe "The FlightSchool application" do
   end
 
   it "shows facts about a particular airport" do
-    get "/airports/LAX"
+    get "/airports/SFO"
     expect(last_response).to be_ok
     expect(last_response.body).to include("Los Angeles")
   end
